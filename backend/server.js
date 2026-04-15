@@ -6,7 +6,7 @@
 const express = require('express');
 const cors = require('cors');
 const dotenv = require('dotenv');
-const connectDB = require('./config/db');
+const { connectDB, getDbStatus } = require('./config/db');
 
 // Load environment variables
 dotenv.config();
@@ -59,7 +59,12 @@ app.use('/api/seller', require('./routes/sellerRoutes'));
 
 // Health check endpoint
 app.get('/api/health', (req, res) => {
-  res.json({ status: 'OK', message: 'Grocery Delivery API is running' });
+  const db = getDbStatus();
+  res.status(db.connected ? 200 : 503).json({
+    status: db.connected ? 'OK' : 'DEGRADED',
+    message: 'Grocery Delivery API is running',
+    db,
+  });
 });
 
 // --- Global Error Handler ---
