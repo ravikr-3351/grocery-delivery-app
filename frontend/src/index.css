@@ -1,0 +1,27 @@
+/* Global Styles - FreshCart Grocery Delivery */
+* { margin: 0; padding: 0; box-sizing: border-box; }
+
+body {
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+  background-color: #f8faf8;
+  color: #1a1a2e;
+  line-height: 1.6;
+}
+
+a { text-decoration: none; color: inherit; }
+
+:root {
+  --primary: #2d6a4f;
+  --primary-light: #40916c;
+  --primary-dark: #1b4332;
+  --secondary: #f77f00;
+  --bg: #f8faf8;
+  --card-bg: #ffffff;
+  --text: #1a1a2e;
+  --text-light: #6b7280;
+  --border: #e5e7eb;
+  --danger: #ef4444;
+  --success: #22c55e;
+  --radius: 12px;
+  --shadow: 0 2px 8px rgba(0,0,0,0.08);
+}
