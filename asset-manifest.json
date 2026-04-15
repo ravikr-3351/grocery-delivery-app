@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/grocery-delivery-app/static/css/main.da5d88e0.css",
+    "main.js": "/grocery-delivery-app/static/js/main.e8db262f.js",
+    "index.html": "/grocery-delivery-app/index.html",
+    "main.da5d88e0.css.map": "/grocery-delivery-app/static/css/main.da5d88e0.css.map",
+    "main.e8db262f.js.map": "/grocery-delivery-app/static/js/main.e8db262f.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.da5d88e0.css",
+    "static/js/main.e8db262f.js"
+  ]
+}
